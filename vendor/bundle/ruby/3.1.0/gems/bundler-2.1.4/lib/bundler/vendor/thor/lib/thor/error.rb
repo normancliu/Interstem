@@ -103,8 +103,8 @@ class Bundler::Thor
 
   if Correctable
     DidYouMean.correct_error(
-      'Bundler::Thor::UndefinedCommandError' => UndefinedCommandError::SpellChecker,
-      'Bundler::Thor::UnknownArgumentError' => UnknownArgumentError::SpellChecker
+      'Bundler::Thor::UndefinedCommandError', UndefinedCommandError::SpellChecker,
+      'Bundler::Thor::UnknownArgumentError', UnknownArgumentError::SpellChecker
     )
   end
 end
